@@ -1,0 +1,46 @@
+<html>
+<link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+<link href="https://use.fontawesome.com/releases/v5.0.7/css/all.css" rel="stylesheet">
+<link rel="stylesheet" href="./styles/style.css">
+<script src="./script/drag.js"></script>
+
+<head>
+    <h1 class="headers">
+        <p>Are you a perfect web developer?</p>
+    </h1>
+    <h3 class="headers">
+        <p>Drop your capabilities in respective field</p>
+    </h3>
+</head>
+
+<body>
+    <br><br>
+    <div class="row">
+        <div class="column1">
+                <p><h2 style="text-align: center"><i class="fas fa-list-alt"></i> <u>Contents</u></h2></p>
+            <div class="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <p class="p" ondragstart="dragStart(event)" draggable="true" id="dragtarget">HTML</p>
+            <p class="p" ondragstart="dragStart(event)" draggable="true" id="dragtarget2">CSS!</p>
+            <p class="p" ondragstart="dragStart(event)" draggable="true" id="dragtarget3">JavaScript</p>
+            <p class="p" ondragstart="dragStart(event)" draggable="true" id="dragtarget4">TypeScript</p>
+            <p class="p" ondragstart="dragStart(event)" draggable="true" id="dragtarget5">AngularJS</p>
+            <p class="p" ondragstart="dragStart(event)" draggable="true" id="dragtarget6">NodeJS</p>
+            </div>
+        </div>
+
+        <div class="column2">
+            <p>
+                <h2 style="text-align: center"><i class="fas fa-thumbs-up"></i> <u>YES</u></h2>
+            </p>
+            <div class="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        </div>
+        <div class="column3">
+            <p>
+                <h2 style="text-align: center"><i class="fas fa-thumbs-down"></i> <u>NO</u></h2>
+            </p>
+            <div class="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        </div>
+    </div>
+</body>
+
+</html>
